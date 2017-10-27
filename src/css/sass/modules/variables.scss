@@ -1,0 +1,66 @@
+/**
+ * modules/variables
+ * ---
+ */
+
+
+/**
+ * Typography
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Lato:400,400i,700');
+
+
+$font-family-base: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 15px;
+$line-height-base: 1.5;
+$font-weight-base: 400;
+$link-decoration: none;
+$link-hover-decoration: $link-decoration;
+$dt-font-weight: $font-weight-base;
+$text-muted: #F2f2f2;
+
+
+$headings-margin-bottom: 1.5rem !default;
+
+$h1-font-size:   2.266em !default;
+$h2-font-size:   1.733em !default;
+$h3-font-size:   1.533em !default;
+$h4-font-size:   1.333em !default;
+$h5-font-size:   1.2333em !default;
+$h6-font-size:   1em !default;
+
+
+$paragraph-margin-bottom: 1rem !default;
+
+
+$table-cell-padding:          .75rem !default;
+$table-cell-padding-sm: .3rem !default;
+
+/**
+ * Colors
+ */
+
+$text-color: #6A6A6A;
+$link-color: $text-color;
+$link-hover-color: darken($link-color, 15%);
+
+
+$body-bg: #fff;
+$body-color: #131313;
+$selection-bg: #04A4CC;
+
+
+/**
+ * Grid
+ */
+
+$wrapper-width: 1280px;
+
+
+$padding-horizontal-base: 5px;
+$padding-vertical-base: 5px;
+$margin-horizontal-base: 5px;
+$margin-vertical-base: 5px;
+$margin-horizontal-large: 15px;
+$margin-vertical-large: 15px;
