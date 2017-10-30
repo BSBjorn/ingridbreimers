@@ -3,8 +3,8 @@
 
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Website delivered by', 'html5blank'); ?>
-					<a href="//cicerodg.no">Cicero Digital og Grafisk AS</a>.
+					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
+					<br/><?php _e('Website delivered by', 'html5blank'); ?>	<a href="//cicerodg.no">Cicero Digital og Grafisk AS</a>.
 				</p>
 				<!-- /copyright -->
 
