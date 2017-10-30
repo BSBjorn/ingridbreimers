@@ -5,7 +5,7 @@
 		<section>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-			<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+			
 
 
       <?php
