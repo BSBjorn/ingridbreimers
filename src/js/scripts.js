@@ -9,6 +9,11 @@
 				autoplay: true,
 				infinite: true
 			});
+
+			$( "figure" ).click(function() {
+				$( "figure").css("flex","0 0 33.33332%");
+  			$(this).css("flex","0 0 100%");
+			});
 	});
 
 } ( this, jQuery ));
