@@ -4,20 +4,41 @@
 		<!-- section -->
 		<section>
 
-			<h1><?php the_title(); ?></h1>
-
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<?php the_content(); ?>
+				<?php if( have_rows('gallery') ): ?>
 
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
+	<div class="image-series">
 
-				<br class="clear">
+	<?php while( have_rows('gallery') ): the_row();
 
-				<?php edit_post_link(); ?>
+		// vars
+		$title = get_sub_field('series_title');
+		$gallery = get_sub_field('images');
+
+		if( $gallery ): ?>
+		<h2><?php echo $title; ?></h2>
+				<div class="gallery">
+
+						<?php foreach( $gallery as $image ): ?>
+
+								<figure>
+									<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+								</figure>
+
+						<?php endforeach; ?>
+				</div>
+		<?php endif; ?>
+
+
+	<?php endwhile; ?>
+
+</div>
+
+<?php endif; ?>
 
 			</article>
 			<!-- /article -->
