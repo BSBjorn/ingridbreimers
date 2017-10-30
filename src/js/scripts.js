@@ -11,8 +11,12 @@
 			});
 
 			$( "figure" ).click(function() {
-				$( "figure").css("flex","0 0 33.33332%");
-  			$(this).css("flex","0 0 100%");
+				$( "figure").css({
+					"flex":"0 0 33.3332%"
+				});
+  			$(this).css({
+					"flex":"0 0 100%"
+				});
 			});
 	});
 
