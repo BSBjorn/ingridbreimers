@@ -5,7 +5,7 @@
 		// DOM ready, take it away
 
 			$(".unSlider").unslider({
-				nav: false,
+				nav: true,
 				autoplay: true,
 				infinite: true
 			});

@@ -1,0 +1,28 @@
+/**
+ * partials/nav
+ * ---
+ * Menus
+ */
+
+
+.nav {
+  ul {
+    list-style: none;
+    @include reset-box;
+    li {
+      text-transform: uppercase;
+      margin: $margin-vertical-large 0;
+
+
+    }
+    .current_page_item {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.menu {}
+
+.sub-menu {}
+
+.menu-item {}
