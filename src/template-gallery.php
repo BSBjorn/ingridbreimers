@@ -20,7 +20,7 @@
 		$gallery = get_sub_field('images');
 
 		if( $gallery ): ?>
-		<h2><?php echo $title; ?></h2>
+		<h2 class="title"><?php echo $title; ?></h2>
 				<div class="gallery">
 
 						<?php foreach( $gallery as $image ): ?>
