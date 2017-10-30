@@ -1,0 +1,22 @@
+/**
+ * partials/page
+ * ---
+ * Pages
+ */
+main {
+  padding-top: $spacing-base;
+}
+.unslider {
+  will-change: contents;
+}
+.front_page_gallery {
+  figure {
+    height: $main-area;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/**
+ * partials/wrapper
+ * ---
+ */
+
+
+.wrapper {
+  max-width: $wrapper-width;
+  padding: 0 ;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  header {
+    flex: 0 0 $header-width;
+  }
+  main {
+    flex: 1;
+  }
+  footer {
+    flex: 0 0 100%;
+  }
+
+}

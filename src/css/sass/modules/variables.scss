@@ -34,7 +34,7 @@ $h6-font-size:   1em !default;
 $paragraph-margin-bottom: 1rem !default;
 
 
-$table-cell-padding:          .75rem !default;
+$table-cell-padding:    .75rem !default;
 $table-cell-padding-sm: .3rem !default;
 
 /**
@@ -55,8 +55,12 @@ $selection-bg: #04A4CC;
  * Grid
  */
 
-$wrapper-width: 1280px;
+$wrapper-width: 1120px;
+$header-width: 350px;
 
+$main-area: calc(#{$wrapper-width} - #{$header-width});
+
+$spacing-base: 65px;
 
 $padding-horizontal-base: 5px;
 $padding-vertical-base: 5px;

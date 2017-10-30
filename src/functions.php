@@ -105,18 +105,23 @@ function html5blank_header_scripts()
             // Modernizr
             wp_register_script('modernizr', get_template_directory_uri() . '/bower_components/modernizr/modernizr.js', array(), '2.8.3');
 
+
             // Custom scripts
             wp_register_script(
                 'html5blankscripts',
                 get_template_directory_uri() . '/js/scripts.js',
                 array(
+
                     'conditionizr',
                     'modernizr',
                     'jquery'),
                 '1.0.0');
 
+
             // Enqueue Scripts
             wp_enqueue_script('html5blankscripts');
+
+
 
         // If production
         } else {
@@ -137,6 +142,12 @@ function html5blank_conditional_scripts()
         wp_enqueue_script('scriptname');
     }
 }
+function html5blank_slider()  {
+        wp_register_script('my-slider', get_template_directory_uri(). '/bower_components/unslider/src/js/unslider.js', array(), '', true);
+        wp_enqueue_script('my-slider');
+}
+add_action('wp_enqueue_scripts', 'html5blank_slider');
+
 
 // Load HTML5 Blank styles
 function html5blank_styles()
@@ -242,7 +253,7 @@ if (function_exists('register_sidebar'))
 function my_remove_recent_comments_style()
 {
     global $wp_widget_factory;
-    
+
     if (isset($wp_widget_factory->widgets['WP_Widget_Recent_Comments'])) {
         remove_action('wp_head', array(
             $wp_widget_factory->widgets['WP_Widget_Recent_Comments'],
